@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.5 on win32)" generated="20200914 17:26:44.278" rpa="false">
+<suite id="s1" name="Auth" source="C:\QAChallengeEstrategia\APIautomationtest\auth.robot">
+<test id="s1-t1" name="Criação do usuário de usuário novo">
+<kw name="Create Session" library="RequestsLibrary">
+<doc>Create Session: create a HTTP session to a server</doc>
+<arguments>
+<arg>new_user</arg>
+<arg>${HOST}</arg>
+</arguments>
+<msg timestamp="20200914 17:26:44.390" level="INFO">Creating Session using : alias=new_user, url=http://54.207.100.192, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20200914 17:26:44.390" endtime="20200914 17:26:44.390"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>Content-Type=application/json</arg>
+<arg>charset=utf-8</arg>
+</arguments>
+<assign>
+<var>${headers}</var>
+</assign>
+<msg timestamp="20200914 17:26:44.391" level="INFO">${headers} = {'Content-Type': 'application/json', 'charset': 'utf-8'}</msg>
+<status status="PASS" starttime="20200914 17:26:44.390" endtime="20200914 17:26:44.391"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>name=${name}</arg>
+<arg>email=${email}</arg>
+<arg>password=${pass}</arg>
+</arguments>
+<assign>
+<var>${body}</var>
+</assign>
+<msg timestamp="20200914 17:26:44.391" level="INFO">${body} = {'name': 'Wagner F Cruz', 'email': 'wagner.ferreira@live.com', 'password': 'wag123456'}</msg>
+<status status="PASS" starttime="20200914 17:26:44.391" endtime="20200914 17:26:44.391"></status>
+</kw>
+<kw name="Post Request" library="RequestsLibrary">
+<doc>Send a POST request on the session object found using the
+given `alias`</doc>
+<arguments>
+<arg>new_user</arg>
+<arg>/auth/register</arg>
+<arg>data=${body}</arg>
+<arg>headers=${headers}</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<msg timestamp="20200914 17:26:44.526" level="INFO">POST Request : url=http://54.207.100.192/auth/register 
+ path_url=/auth/register 
+ headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'charset': 'utf-8', 'Content-Length': '87'} 
+ body={"name": "Wagner F Cruz", "email": "wagner.ferreira@live.com", "password": "wag123456"} 
+ </msg>
+<msg timestamp="20200914 17:26:44.526" level="INFO">POST Response : url=http://54.207.100.192/auth/register 
+ status=200, reason=OK 
+ body={"user":{"_id":"5f5fd2048168f64241fce3e4","name":"Wagner F Cruz","email":"wagner.ferreira@live.com","createdAt":"2020-09-14T20:26:44.348Z","__v":0},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNWZkMjA0ODE2OGY2NDI0MWZjZTNlNCIsImlhdCI6MTYwMDExNTIwNCwiZXhwIjoxNjAwMjAxNjA0fQ.AKAMIGR01gConC4uMT_chD-KoMUj6_MFZXDmAevpQaA"} 
+ </msg>
+<msg timestamp="20200914 17:26:44.526" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20200914 17:26:44.392" endtime="20200914 17:26:44.526"></status>
+</kw>
+<kw name="Status Should Be" library="RequestsLibrary">
+<doc>Fails if response status code is different than the expected.</doc>
+<arguments>
+<arg>200</arg>
+<arg>${response}</arg>
+</arguments>
+<status status="PASS" starttime="20200914 17:26:44.527" endtime="20200914 17:26:44.527"></status>
+</kw>
+<kw name="Request Should Be Successful" library="RequestsLibrary">
+<doc>Fails if response status code is a client or server error (4xx, 5xx).</doc>
+<arguments>
+<arg>${response}</arg>
+</arguments>
+<status status="PASS" starttime="20200914 17:26:44.527" endtime="20200914 17:26:44.528"></status>
+</kw>
+<status status="PASS" starttime="20200914 17:26:44.389" endtime="20200914 17:26:44.528" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Login do usuário de usuário novo">
+<kw name="Create Session" library="RequestsLibrary">
+<doc>Create Session: create a HTTP session to a server</doc>
+<arguments>
+<arg>login_user</arg>
+<arg>${HOST}</arg>
+</arguments>
+<msg timestamp="20200914 17:26:44.529" level="INFO">Creating Session using : alias=login_user, url=http://54.207.100.192, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20200914 17:26:44.529" endtime="20200914 17:26:44.530"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>Content-Type=application/json</arg>
+<arg>charset=utf-8</arg>
+</arguments>
+<assign>
+<var>${headers}</var>
+</assign>
+<msg timestamp="20200914 17:26:44.530" level="INFO">${headers} = {'Content-Type': 'application/json', 'charset': 'utf-8'}</msg>
+<status status="PASS" starttime="20200914 17:26:44.530" endtime="20200914 17:26:44.530"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>email=${email}</arg>
+<arg>password=${pass}</arg>
+</arguments>
+<assign>
+<var>${body}</var>
+</assign>
+<msg timestamp="20200914 17:26:44.531" level="INFO">${body} = {'email': 'wagner.ferreira@live.com', 'password': 'wag123456'}</msg>
+<status status="PASS" starttime="20200914 17:26:44.530" endtime="20200914 17:26:44.531"></status>
+</kw>
+<kw name="Post Request" library="RequestsLibrary">
+<doc>Send a POST request on the session object found using the
+given `alias`</doc>
+<arguments>
+<arg>login_user</arg>
+<arg>/auth/authenticate</arg>
+<arg>data=${body}</arg>
+<arg>headers=${headers}</arg>
+</arguments>
+<assign>
+<var>${resp_login}</var>
+</assign>
+<msg timestamp="20200914 17:26:44.656" level="INFO">POST Request : url=http://54.207.100.192/auth/authenticate 
+ path_url=/auth/authenticate 
+ headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'charset': 'utf-8', 'Content-Length': '62'} 
+ body={"email": "wagner.ferreira@live.com", "password": "wag123456"} 
+ </msg>
+<msg timestamp="20200914 17:26:44.656" level="INFO">POST Response : url=http://54.207.100.192/auth/authenticate 
+ status=200, reason=OK 
+ body={"user":{"_id":"5f5fd2048168f64241fce3e4","name":"Wagner F Cruz","email":"wagner.ferreira@live.com","createdAt":"2020-09-14T20:26:44.348Z","__v":0},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNWZkMjA0ODE2OGY2NDI0MWZjZTNlNCIsImlhdCI6MTYwMDExNTIwNCwiZXhwIjoxNjAwMjAxNjA0fQ.AKAMIGR01gConC4uMT_chD-KoMUj6_MFZXDmAevpQaA"} 
+ </msg>
+<msg timestamp="20200914 17:26:44.657" level="INFO">${resp_login} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20200914 17:26:44.531" endtime="20200914 17:26:44.657"></status>
+</kw>
+<kw name="Status Should Be" library="RequestsLibrary">
+<doc>Fails if response status code is different than the expected.</doc>
+<arguments>
+<arg>200</arg>
+<arg>${resp_login}</arg>
+</arguments>
+<status status="PASS" starttime="20200914 17:26:44.657" endtime="20200914 17:26:44.657"></status>
+</kw>
+<kw name="Request Should Be Successful" library="RequestsLibrary">
+<doc>Fails if response status code is a client or server error (4xx, 5xx).</doc>
+<arguments>
+<arg>${resp_login}</arg>
+</arguments>
+<status status="PASS" starttime="20200914 17:26:44.658" endtime="20200914 17:26:44.658"></status>
+</kw>
+<status status="PASS" starttime="20200914 17:26:44.529" endtime="20200914 17:26:44.658" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200914 17:26:44.279" endtime="20200914 17:26:44.659"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Auth">Auth</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
