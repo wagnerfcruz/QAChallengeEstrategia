@@ -137,9 +137,9 @@ Endereço da API: http://54.207.100.192/
 
 ![QA - Estrategia Educacional - Log API Teste Cmder](https://github.com/wagnerfcruz/QAChallengeEstrategia/blob/master/APIautomationtest/cmder_api.gif)
 
-![QA - Log - API Teste Cmder](https://github.com/wagnerfcruz/QAChallengeEstrategiablob/master/APIautomationtest/log_api.gif)
+![QA - Log - API Teste Cmder](https://github.com/wagnerfcruz/QAChallengeEstrategiablob/blob/master/APIautomationtest/log_api.gif)
 
-![QA - Report - API Teste Cmder](https://github.com/wagnerfcruz/QAChallengeEstrategia/blob/masterAPIautomationtest/report_api.gif)
+![QA - Report - API Teste Cmder](https://github.com/wagnerfcruz/QAChallengeEstrategia/blob/master/APIautomationtest/report_api.gif)
 
 
 > A library Requests
