@@ -106,7 +106,7 @@ Scripts de Teste Web estão na pasta WebUIautomationtest/tests/
 ![QA - Estrategia Educacional - Log Web Teste Cmder](https://github.com/wagnerfcruz/QAChallengeEstrategia/blob/master/WebUIautomationtest/logs/cmder_gif.gif)
 
 
-![QA - Estrategia Educacional - Demostração teste Web](https://github.com/wagnerfcruz/QAChallengeEstrategia/blob/master/WebUIautomationtest/logs/buscagif.gif)
+![QA - Estrategia Educacional - Demostração teste Web](https://github.com/wagnerfcruz/QAChallengeEstrategia/master/WebUIautomationtest/logs/cmder_gif.gif)
 
 
 
