@@ -1,0 +1,40 @@
+Exemplo de Report de melhoria 
+
+Tarefa : 1156
+
+Melhoria no layout de depoimento da homepage
+
+Descrição : 
+
+Conforme imagem anexo, o layout utilizado na demostração dos depoimentos de aluno está com a borda azul, poderia ser uma cor branca ou cinza claro para armonizar o todo restante do site.
+
+
+Anexos : 
+
+
+Imagem ao lado
+
+
+
+
+
+---------------------------------------------------------------
+
+
+
+
+Exemplo de Report de Bug
+Tarefa : 1157
+
+Melhoria no layout de depoimento da homepage
+
+Descrição : 
+
+Conforme imagem anexo, o primeiro item da lista de curso na busca por Professor, está com "." Ponto no inicio da frase, não está seguindo o padrão utilizado nas nomeclatura, caraterizando um erro na digitação do texto.
+
+Link direto : https://www.estrategiaconcursos.com.br/cursos/professor/
+
+Anexos : 
+
+
+Imagem ao lado

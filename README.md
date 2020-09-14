@@ -172,7 +172,7 @@ git clone https:https://github.com/wagnerfcruz/QAChallengeEstrategia
 ```
 # Obervações Gerais
 
-Eu uso no meu dia a dia o Framework codeceptJS (JavaScrit) para automatizar o Mobile " Android e iOS " e gostaria de poder ter efetuado testes mobile também na POC aqui apresentada, porém não tive tempo devido as demandas do meu trabalho e até pelo tempo que tive disponivel optei pelo Robot para entregar testes básicos mas atendendo as validações solicitadas. 
+Eu uso no meu dia a dia o Framework codeceptJS (JavaScrit) para automatizar o Mobile " Android e iOS " e gostaria de poder ter efetuado testes mobile também na POC aqui apresentada, porém não tive tempo e até pelo tempo que tive disponivel optei pelo Robot para entregar testes básicos mas atendendo as validações solicitadas. 
 Também utilizo BDD (Gherkin) no dia a dia que pelo tempo não consegui implementar no projeto, segui com os testes básicos e funcional. 
 
 # Autor : 
