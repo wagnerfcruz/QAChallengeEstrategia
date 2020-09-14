@@ -103,10 +103,12 @@ Pelo VSCode localize a pasta do projeto, acesse o terminal e execute os comandos
 
 Scripts de Teste Web estão na pasta WebUIautomationtest/tests/
 
+
 ![QA - Estrategia Educacional - Log Web Teste Cmder](https://github.com/wagnerfcruz/QAChallengeEstrategia/blob/master/WebUIautomationtest/logs/buscagif.gif)
 
 
 ![QA - Estrategia Educacional - Demostração teste Web](https://github.com/wagnerfcruz/QAChallengeEstrategia/blob/master/WebUIautomationtest/logs/cmder_gif.gif)
+
 
 
 
@@ -137,7 +139,9 @@ Endereço da API: http://54.207.100.192/
 
 ![QA - Estrategia Educacional - Log API Teste Cmder](https://github.com/wagnerfcruz/QAChallengeEstrategia/blob/master/APIautomationtest/cmder_api.gif)
 
-![QA - Log - API Teste Cmder](https://github.com/wagnerfcruz/QAChallengeEstrategiablob/blob/master/APIautomationtest/log_api.gif)
+
+![QA - Log - API Teste Cmder](https://github.com/wagnerfcruz/QAChallengeEstrategia/blob/master/APIautomationtest/log_api.gif)
+
 
 ![QA - Report - API Teste Cmder](https://github.com/wagnerfcruz/QAChallengeEstrategia/blob/master/APIautomationtest/report_api.gif)
 
